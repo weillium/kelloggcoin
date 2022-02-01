@@ -68,7 +68,9 @@ end
 for account in balance 
 
   if account[:user] != "nil"
-    puts "#{account[:user]}'s KelloggCoin balance is #{account[:balance]}"
+    name = account[:user]
+    name[0] = name[0].capitalize
+    puts "#{name}'s KelloggCoin balance is #{account[:balance]}"
   end
 
 end
